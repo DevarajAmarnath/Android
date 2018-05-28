@@ -72,7 +72,9 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
         if (savedInstanceState != null) {
             mMovieInfoJsonData = savedInstanceState.getString(SAVED_MOVIE_INFO_JSON_EXTRA);
-            mMovieRecyclerViewAdapter.setMovieInfo(mMovieInfoJsonData);
+            if(mMovieInfoJsonData != null) {
+                mMovieRecyclerViewAdapter.setMovieInfo(mMovieInfoJsonData);
+            }
         } else {
             // by default, load popular movies
             queryTmdb(TmDbApiUtilities.TMDB_MOVIE_TYPE_POPULAR);
