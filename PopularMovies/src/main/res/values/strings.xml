@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+
+    <string name="movie_poster_image">Movie Poster Image</string>
+    <string name="movie_poster_error_image">Movie Poster Download Error Image</string>
+
+    <string name="popular_movies">Popular Movies</string>
+    <string name="top_rated_movies">Top Rated Movies</string>
+    <string name="upcoming_movies">Upcoming Movies</string>
+
+    <string name="movie_rating">%d / 10 </string>
+
+</resources>

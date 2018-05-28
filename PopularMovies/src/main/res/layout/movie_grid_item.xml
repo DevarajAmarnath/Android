@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_grid_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+        android:contentDescription="@string/movie_poster_image" />
+        <!-- https://stackoverflow.com/questions/15142780/how-do-i-remove-extra-space-above-and-below-imageview -->
+
+    <ImageView
+        android:id="@+id/iv_grid_movie_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:background="@android:color/holo_red_light"
+        app:srcCompat="@android:drawable/stat_notify_error"
+        android:contentDescription="@string/movie_poster_error_image"/>
+
+    <ProgressBar
+        android:id="@+id/pb_image_loading"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
